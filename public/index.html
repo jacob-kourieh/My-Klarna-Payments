@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://x.klarnacdn.net/kp/lib/v1/api.js" async></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-section">
+            <label for="amount">Input amount:</label>
+            <input type="number" id="amount" name="amount" placeholder="Enter the amount">
+            <button type="submit">Submit</button>
+        </div>
+
+        <div style="width: 400px; margin: auto; padding-top: 28px; padding-bottom: 28px;">
+            <img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg"
+                style="width: 400px; margin: auto" />
+        </div>
+
+        <!-- Klarna container -->
+        <div id="klarna_container" style="width: 400px; margin: auto"></div>
+        <div style="width: 400px; margin: auto">
+            <!-- Button to trigger authorize call -->
+            <button class="authorize" style="width: 400px; height: 50px; margin: auto">
+                PAY
+            </button>
+        </div>
+
+        <div class="result" style="display:none;">
+            <h3>Order Confirmed!</h3>
+            <p>Name: <span id="customerName"></span></p>
+            <p>Order ID: <span id="orderId"></span></p>
+            <p>Total Amount Paid: <span id="totalAmount"></span> SEK</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
