@@ -4,7 +4,7 @@ This project demonstrates an integration of Klarna Payments into a web applicati
 
 ## Author
 
-Jacob Kourieh
+[Jacob Kourieh](http://www.jacob-kourieh.com)
 
 ## Features
 
@@ -34,14 +34,6 @@ Jacob Kourieh
 
 ![Order Confirmation](/images/confirm.png)
 
-## How to Get the Images
-
-The images used in this document are hosted on a sandbox server. You can download them using the following links:
-
-- [Start with Input](sandbox:/mnt/data/start%20with%20input.png)
-- [Pay Button Displayed](sandbox:/mnt/data/tp%20pay.png)
-- [Order Confirmation](sandbox:/mnt/data/confirm.png)
-
 ## Technologies Used
 
 - HTML/CSS/JavaScript for the frontend
@@ -57,7 +49,7 @@ To run this project locally:
 1. Clone the repository.
 2. Navigate to the project directory.
 3. Install dependencies: `npm install`
-4. Start the server: `npm start`
+4. Start the server using `node server.js`
 5. Open `http://localhost:3000` in a web browser.
 
 Ensure that you have Node.js and npm installed on your machine before running the above commands.
